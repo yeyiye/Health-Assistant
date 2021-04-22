@@ -1,0 +1,14 @@
+
+<view style="height:100px"></view>
+<view style="padding:50px; text-align:center">
+  <icon type="success" size = "100"></icon>
+  <view style="font-size:20px">记录成功</view>
+</view>
+<view class="buttunsubout">
+  <navigator class="buttunsub" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20"
+  open-type="navigateBack"
+  delta="2">确定</navigator>
+</view>

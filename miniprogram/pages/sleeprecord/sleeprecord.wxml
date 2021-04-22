@@ -1,0 +1,15 @@
+<view class = "space1">睡眠记录</view>
+<view class="buttunout">
+  <navigator class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20" 
+  url="/pages/sleeprecording/sleeprecording">去记录</navigator>
+</view>
+<view class="buttunout">
+  <navigator class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20"
+  url="/pages/sleeprecorded/sleeprecorded">往期记录</navigator>
+</view>
