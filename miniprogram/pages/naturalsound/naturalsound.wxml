@@ -1,0 +1,19 @@
+<text>设置时长</text> 
+
+<view class="row">
+  <view class ="buttun" bindtap="set15">15分钟</view>
+  <view class ="buttun" bindtap="set30">30分钟</view>
+  <view class ="buttun" bindtap="set60">60分钟</view>
+</view>
+<text>{{hours}}:{{minute}}:{{second}}</text>
+<view class="row">
+  <view class="block" wx:for="{{list}}" bindtap="music" wx:key="index">
+    <view class="pic">
+      <image src="../../image/sound.png"></image>
+    </view>
+    <view class="text">
+      <view class="title">这里放标题</view>
+    </view>
+  </view>
+</view>
+

@@ -5,14 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    sleeph:'00:00',
+    uph:'00:00'
   },
-
+setsleeptime:function(e){
+  this.setData({
+    sleeph:e.detail.value
+  });
+},
+setuptime:function(e){
+  this.setData({
+    uph:e.detail.value
+  });
+},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
   },
 
   /**

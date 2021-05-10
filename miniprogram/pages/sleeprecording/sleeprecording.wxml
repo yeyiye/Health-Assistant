@@ -1,16 +1,16 @@
 <view class="space1">睡眠记录</view>
-<picker class = "buttunout" mode="time">
+<picker class = "buttunout" mode="time" bindchange="setsleeptime">
   <view class="buttunin" 
   hover-class="buttundown"
   hover-start-time = "0"
-  hover-stay-time = "20">入睡时间</view>
+  hover-stay-time = "20">入睡时间 {{sleeph}}</view>
 </picker>
 <view style="height:15px"></view>
-<picker class = "buttunout" mode="time">
+<picker class = "buttunout" mode="time" bindchange="setuptime">
   <view class="buttunin" 
   hover-class="buttundown"
   hover-start-time = "0"
-  hover-stay-time = "20">起床时间</view>
+  hover-stay-time = "20">起床时间 {{uph}}</view>
 </picker>
 <view style="height:30px"></view>
 <button class="warn" hover-class="warndown" form-type="reset">重置</button>
