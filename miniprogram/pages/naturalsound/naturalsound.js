@@ -5,11 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[1,2,3,4],
-    musicstate: false,
+    list:[{
+      name:"小溪",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FYm5JQTBYRmNBRkxsajFwUDhETDQ5VUJPMGJvemNnTm9JNE0wanFyOXM3NF93.MP3",
+      pic:"../../image/stream.png",
+      picp:"../../image/stream-p.png",
+      musicstate: false
+    },{
+      name:"小溪",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FU3RTYXAyaGk3WkRoZl9zb2dOeFRkOEI0ZDNlQmdTTEw1LTFSOXlRLVRkN1Jn.mp3",
+      pic:"../../image/stream.png",
+      picp:"../../image/stream-p.png",
+      musicstate: false
+    },{
+      name:"小溪",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FZDZkUnc0RU91TkFzeTYyT0k0ZXNPUUJ6eWg1RFpwUFJHbnQ2UjF3M2owcG1R.mp3",
+      pic:"../../image/stream.png",
+      picp:"../../image/stream-p.png",
+      musicstate: false
+    },{
+      name:"小溪",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FUmJkT2pEbVdMRkFrZ01QS0lIWUR3RUJ1SEdibkNjMm1VZmZVb2pnMklMNjNB.mp3",
+      pic:"../../image/stream.png",
+      picp:"../../image/stream-p.png",
+      musicstate: false
+    }],
+    playing: -1,
     hours: '0' + 0,   // 时
-    minute: 30,   // 分
-    second: '0' + 0    // 秒
+    minute: '0' + 0,   // 分
+    second: '0' + 5    // 秒
   },
   set15:function(e){
     this.setData({
@@ -37,7 +61,8 @@ Page({
     const bgMusic = wx.getBackgroundAudioManager()
     var second = that.data.second
     var minute = that.data.minute
-    var hours = that.data.hours       
+    var hours = that.data.hours
+    var state ="list["+that.data.playing+"].musicstate"        
     var i = setInterval(function () {  // 设置定时器
         second--; 
         if (bgMusic.paused == true){
@@ -46,6 +71,12 @@ Page({
         else{
           if(second==0 && minute==0 && hours==0){
             clearInterval(i);
+            that.setData({
+              [state]:false,
+              playing:-1,
+              minute:30,
+              second:'0' + 0
+            })
             bgMusic.stop();
           }
           else if (second < 0) {
@@ -91,9 +122,9 @@ Page({
   },
   musicplay:function(e){
     const bgMusic = wx.getBackgroundAudioManager(); //音乐播放实例
-    //bug ios 播放时必须加title 不然会报错导致音乐不播放
-    bgMusic.title = "test";
-    bgMusic.src = "http://www.0dutv.com/plug/down/up2.php/273437983.mp3";
+    bgMusic.title = this.data.list[this.data.playing].name;
+    bgMusic.src = this.data.list[this.data.playing].url;
+  //bug ios 播放时必须加title 不然会报错导致音乐不播放
     bgMusic.onEnded(this.musicplay);
     bgMusic.play();
     this.Interval();
@@ -104,19 +135,32 @@ Page({
   },
   music:function(e){
     let that = this;
-    if(that.data.musicstate==false){
+    const id = e.currentTarget.dataset.id;
+    var state = "list["+id+"].musicstate";
+    var play = "list["+that.data.playing+"].musicstate"
+    if(that.data.list[id].musicstate==false){
+      if(that.data.playing != -1 &&that.data.playing != id){
+        const bgMusic = wx.getBackgroundAudioManager();
+        bgMusic.stop();
+        that.setData({
+          [play]:false,
+          playing:-1
+        })
+      }
       that.setData({
-        musicstate: true
+        [state]: true,
+        playing:id
       })
-      that.musicplay();
+      that.musicplay(e);
     }
-    else if(that.data.musicstate==true){
-      that.musicpause();
+    else if(that.data.list[id].musicstate==true){
+      that.musicpause(e);
       that.setData({
-        musicstate: false
+        [state]: false
       })
     }
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
