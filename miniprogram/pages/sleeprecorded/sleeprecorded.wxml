@@ -1,0 +1,7 @@
+<view class="row" wx:for="{{list}}" key="index">
+  <image  class="pic" src="../../image/clock.png" mode="widthFix"></image>
+  <view class="text">
+    <view class="title">睡眠时间：</view>
+    <view class="content">8小时15分钟（0:05-8:52）</view>
+  </view>
+</view>

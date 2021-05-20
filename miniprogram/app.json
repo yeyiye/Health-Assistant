@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/sleep/sleep",
     "pages/sleeprecord/sleeprecord",
     "pages/sleeprecording/sleeprecording",
     "pages/sleeprecorded/sleeprecorded",
     "pages/success/success",
     "pages/naturalsound/naturalsound",
+    "pages/story/story",
     "pages/index/index",
     "pages/logs/logs"
   ],

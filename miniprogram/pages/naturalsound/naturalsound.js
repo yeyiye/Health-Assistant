@@ -7,33 +7,27 @@ Page({
   data: {
     list:[{
       name:"小溪",
-      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FYm5JQTBYRmNBRkxsajFwUDhETDQ5VUJPMGJvemNnTm9JNE0wanFyOXM3NF93.MP3",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FZDUtQllRWlBYTkx1bDJrWHA0MFY2Y0IxVkVEalBaQ1N6a3dIV1laZDgxV0x3.mp3",
       pic:"../../image/stream.png",
       picp:"../../image/stream-p.png",
       musicstate: false
     },{
-      name:"小溪",
-      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FU3RTYXAyaGk3WkRoZl9zb2dOeFRkOEI0ZDNlQmdTTEw1LTFSOXlRLVRkN1Jn.mp3",
-      pic:"../../image/stream.png",
-      picp:"../../image/stream-p.png",
+      name:"壁炉",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FYXNIVnBPTS12Wk9ubU5tOGV3NVgwb0JwdEE5MFZSaGc4RU5HSFVQbnZaRGN3.mp3",
+      pic:"../../image/fire.png",
+      picp:"../../image/fire-p.png",
       musicstate: false
     },{
-      name:"小溪",
-      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FZDZkUnc0RU91TkFzeTYyT0k0ZXNPUUJ6eWg1RFpwUFJHbnQ2UjF3M2owcG1R.mp3",
-      pic:"../../image/stream.png",
-      picp:"../../image/stream-p.png",
-      musicstate: false
-    },{
-      name:"小溪",
-      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FUmJkT2pEbVdMRkFrZ01QS0lIWUR3RUJ1SEdibkNjMm1VZmZVb2pnMklMNjNB.mp3",
-      pic:"../../image/stream.png",
-      picp:"../../image/stream-p.png",
+      name:"雨声",
+      url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FVmRCTzdfb01pdExtT1p2RTc5M0ZIQUJmV0xrSEJPRTBPY3NBaFh5eUdPYW5B.MP3",
+      pic:"../../image/rain.png",
+      picp:"../../image/rain-p.png",
       musicstate: false
     }],
     playing: -1,
     hours: '0' + 0,   // 时
-    minute: '0' + 0,   // 分
-    second: '0' + 5    // 秒
+    minute: 15,   // 分
+    second: '0' + 0    // 秒
   },
   set15:function(e){
     this.setData({
@@ -186,14 +180,18 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    if(this.data.playing!=-1){
+      this.musicplay();
+    }
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    if(this.data.playing!=-1){
+      this.musicplay();
+    }
   },
 
   /**

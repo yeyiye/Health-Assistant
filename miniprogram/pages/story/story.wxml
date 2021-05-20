@@ -1,0 +1,11 @@
+<view class="row">
+  <view class="block" wx:for="{{list}}" wx:key="index" bindtap="music" data-id="{{index}}">
+    <view class="pic">
+      <image src="{{item.pic}}" wx:if="{{!item.musicstate}}"></image>
+      <image src="{{item.picp}}" wx:if="{{item.musicstate}}"></image>
+    </view>
+    <view class="text">
+      <view class="title">{{item.name}}</view>
+    </view>
+  </view>
+</view>

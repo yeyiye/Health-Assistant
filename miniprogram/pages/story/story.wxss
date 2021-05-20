@@ -2,7 +2,7 @@
   display: flex;
 }
 .buttun{
-  width: 33%;
+  width: 180rpx;
   height:38rpx;
   padding:30rpx 35rpx;
   background:rgb(140, 231, 3);

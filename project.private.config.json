@@ -27,6 +27,24 @@
         {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sleeprecorded/sleeprecorded",
+          "pathName": "pages/sleeprecorded/sleeprecorded",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sleeprecording/sleeprecording",
+          "pathName": "pages/sleeprecording/sleeprecording",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/story/story",
+          "pathName": "pages/story/story",
           "scene": null
         }
       ]

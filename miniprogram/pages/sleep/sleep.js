@@ -1,11 +1,11 @@
-// pages/sleeprecorded/sleeprecorded.js
+// pages/sleep/sleep.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[1,2,3,4]
+
   },
 
   /**

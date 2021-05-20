@@ -1,0 +1,27 @@
+.row{
+  display: flex;
+  height: 150rpx;
+  margin: 10rpx;
+  border: 5rpx solid;
+  border-left: 5rpx solid;
+}
+.pic{
+  flex:2;
+  width: 100%;
+}
+.text{
+  flex:8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: chocolate;
+  border-left: 5rpx solid;
+  padding: 10rpx;
+}
+.title{
+  font-size: 30rpx;
+  color:rgb(185, 174, 174);
+}
+.content{
+  font-size: 40rpx;
+}
