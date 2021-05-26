@@ -1,0 +1,17 @@
+<view class="con">
+  <image style="width:100%;position:absolute;"
+  src="https://iknow-pic.cdn.bcebos.com/08f790529822720e058cf0a974cb0a46f21fab26?x-bce-process%3Dimage%2Fresize%2Cm_lfit%2Cw_600%2Ch_800%2Climit_1%2Fquality%2Cq_85%2Fformat%2Cf_jpg">
+  </image>
+  <view style="z-index:1;position:absolute;" class="title">睡前故事</view>
+</view>
+<view style="height:400rpx;"></view>
+<view class="row">
+  <view class="block" wx:for="{{list}}" wx:key="index" bindtap="goto" data-id="{{index}}">
+    <view class="pic">
+      <image src="../../image/folder.png" wx:if="{{!item.musicstate}}"></image>
+    </view>
+    <view class="text">
+      <view class="title1">{{item.name}}</view>
+    </view>
+  </view>
+</view>

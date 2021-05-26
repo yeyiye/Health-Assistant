@@ -45,6 +45,12 @@
         {
           "name": "pages/story/story",
           "pathName": "pages/story/story",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/catalogue/catalogue",
+          "pathName": "pages/catalogue/catalogue",
           "scene": null
         }
       ]

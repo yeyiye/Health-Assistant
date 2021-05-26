@@ -14,6 +14,10 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      naturalsoundhours:'0'+0,
+      naturalsoundminute:15,
+      naturalsoundsecond:'0'+0
+    }
   }
 })

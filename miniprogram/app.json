@@ -8,6 +8,7 @@
     "pages/naturalsound/naturalsound",
     "pages/story/story",
     "pages/index/index",
+    "pages/catalogue/catalogue",
     "pages/logs/logs"
   ],
   "requiredBackgroundModes": [

@@ -1,5 +1,6 @@
 .row{
   display: flex;
+  flex-wrap: wrap;
 }
 .buttun{
   width: 180rpx;
@@ -12,7 +13,7 @@
 }
 .block{
   display: flex;
-  width: 120rpx;
+  width: 119rpx;
   flex-direction: column;
   height:150rpx;
   padding:30rpx 35rpx;
