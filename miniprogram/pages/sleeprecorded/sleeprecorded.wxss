@@ -1,3 +1,11 @@
+.line{
+  display: flex;
+  flex-direction: row;
+}
+.p{
+  font-size: 25rpx;
+  color:rgb(255, 255, 255);
+}
 .row{
   display: flex;
   height: 150rpx;

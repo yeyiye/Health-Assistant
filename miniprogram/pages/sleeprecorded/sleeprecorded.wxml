@@ -1,7 +1,10 @@
-<view class="row" wx:for="{{list}}" key="index">
+<view class="row" wx:for="{{list}}" wx:key="index">
   <image  class="pic" src="../../image/alarmclock.png" mode="widthFix"></image>
   <view class="text">
-    <view class="title">睡眠时间：</view>
-    <view class="content">8小时15分钟（0:05-8:52）</view>
+    <view class="line">
+      <view class="title">睡眠时间：</view>
+      <view class="p">　　　　 {{list[index].sleepd}} ~ {{list[index].upd}}</view>
+    </view>
+    <view class="content">{{list[index].hours}}小时{{list[index].minutes}}分钟（{{list[index].sleeph}}-{{list[index].uph}}）</view>
   </view>
 </view>

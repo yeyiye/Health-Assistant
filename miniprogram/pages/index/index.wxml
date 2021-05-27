@@ -1,26 +1,16 @@
 <view class="row1">
-  <view class = "blo">
+  <view class = "blo" bindtap="adddata">
     <view class = "tap"><image src = "../../image/spot.png" class = "spot"></image></view>
     <view class="text"> 15分钟</view>
   </view>
   <text>　　</text>
-  <view class = "blo">
+  <view class = "blo" bindtap="getdata">
     <view class = "tap"><image src = "../../image/spot-k.png" class = "spot"></image></view>
     <view class="text"> 30分钟</view>
   </view>
   <text>　　</text>
-  <view class = "blo">
+  <view class = "blo" bindtap="deletedata">
     <view class = "tap"><image src = "../../image/spot-k.png" class = "spot"></image></view>
     <view class="text"> 60分钟</view>
   </view>
 </view> 
-
-
-
-
-<scroll-view scroll-y class="l">
-  <image src="../../image/sound.png"></image>
-  <image src="../../image/sound.png"></image>
-  <image src="../../image/sound.png"></image>
-  <image src="../../image/sound.png"></image>
-</scroll-view>

@@ -1,4 +1,5 @@
 // pages/sleeprecording/sleeprecording.js
+const DB = wx.cloud.database().collection("list")
 Page({
 
   /**
@@ -35,12 +36,44 @@ Page({
         this.error();
       }
       else{
+        console.log("ok")
+        DB.add({
+          
+          data:{
+            sleeph:this.data.sleeph,
+            uph:this.data.uph,
+            sleepd:this.data.sleepd,
+            upd:this.data.upd
+          },
+          success(res){
+            console.log("添加成功",res)
+          },
+          fail(res){
+            console.log("添加失败",res)
+          }
+        })
         wx.navigateTo({
           url: '../success/success'
         })
       }
     }
     else{
+      console.log("ok")
+      DB.add({
+        
+        data:{
+          sleeph:this.data.sleeph,
+          uph:this.data.uph,
+          sleepd:this.data.sleepd,
+          upd:this.data.upd
+        },
+        success(res){
+          console.log("添加成功",res)
+        },
+        fail(res){
+          console.log("添加失败",res)
+        }
+      })
       wx.navigateTo({
         url: '../success/success'
       })
