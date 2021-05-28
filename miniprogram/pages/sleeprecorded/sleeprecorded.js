@@ -42,11 +42,7 @@ Page({
   onReady: function () {
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+  request:function(e){
     let that = this
     DB.get({
       success(res){
@@ -61,9 +57,39 @@ Page({
         }
       }
     })
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    this.request();
     
   },
+  del:function(e){
+    let that = this;
+    wx.showModal({
 
+      title: '删除',
+ 
+      content: '确定删除这条记录吗',
+ 
+      success: function (res) {
+        let list = that.data.list;
+        const id = e.currentTarget.dataset.id;
+        if (res.confirm) {//这里是点击了确定以后
+          
+          console.log('用户点击确定'+id)
+          console.log(list[id])
+          DB.doc(list[id]._id).remove()
+          that.onShow()
+        } else {//这里是点击了取消以后
+ 
+        }
+ 
+      }
+ 
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

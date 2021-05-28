@@ -1,6 +1,17 @@
+.delete{
+  font-size: 35rpx;
+  color:rgb(0, 0, 0);
+  line-height: 25rpx;
+  height: 100%;
+  width: 45rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .line{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .p{
   font-size: 25rpx;
@@ -31,5 +42,5 @@
   color:rgb(185, 174, 174);
 }
 .content{
-  font-size: 40rpx;
+  font-size: 37rpx;
 }

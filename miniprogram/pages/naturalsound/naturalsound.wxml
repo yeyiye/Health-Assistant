@@ -2,32 +2,32 @@
   <image src="{{list[playing].pic}}" wx:if="{{playing!=-1}}"></image>
 </view>
 <view class="row1">
-  <view class = "blo">
-    <view class = "tap" bindtap="set15">
+  <view class = "blo" bindtap="set15">
+    <view class = "tap">
       <image  wx:if="{{time==15}}" src = "../../image/spot.png" class = "spot"></image>
       <image  wx:if="{{time!=15}}" src = "../../image/spot-k.png" class = "spot"></image>
     </view>
     <view class="text1"> 15分钟</view>
   </view>
   <text>　　</text>
-  <view class = "blo">
-    <view class = "tap" bindtap="set30">
+  <view class = "blo" bindtap="set30">
+    <view class = "tap">
       <image  wx:if="{{time==30}}" src = "../../image/spot.png" class = "spot"></image>
       <image  wx:if="{{time!=30}}" src = "../../image/spot-k.png" class = "spot"></image>
     </view>
     <view class="text1"> 30分钟</view>
   </view>
   <text>　　</text>
-  <view class = "blo">
-    <view class = "tap" bindtap="set60">
+  <view class = "blo" bindtap="set60">
+    <view class = "tap">
       <image  wx:if="{{time==60}}" src = "../../image/spot.png" class = "spot"></image>
       <image  wx:if="{{time!=60}}" src = "../../image/spot-k.png" class = "spot"></image>
     </view>
     <view class="text1"> 60分钟</view>
   </view>
   <text>　　</text>
-  <view class = "blo">
-    <view class = "tap" bindtap="set100">
+  <view class = "blo" bindtap="set100">
+    <view class = "tap">
       <image  wx:if="{{time==100}}" src = "../../image/spot.png" class = "spot"></image>
       <image  wx:if="{{time!=100}}" src = "../../image/spot-k.png" class = "spot"></image>
     </view>
