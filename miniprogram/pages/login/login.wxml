@@ -1,0 +1,37 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+<!--用户名-->
+ <view class="username">
+  <view class="title">用户名：</view>
+  <view class="userid">
+   <input type="text" bindinput ="usernameInput" placeholder="用户名/手机号/邮箱" placeholder-style="color:#999999"/>
+  </view>
+ </view>
+ <!--分割线-->
+ <view class="hr"></view>
+<!--密码-->
+<view class="username">
+  <view class="title">密码：</view>
+  <view class="password">
+   <input type="text" bindinput ="passwordInput" placeholder="请输入密码" placeholder-style="color:#999999"/>
+  </view>
+</view>
+<!--登录按钮-->
+ <button type="primary" class="loginBtn" disabled="{{loginBtnState}}"
+ bindtap="login">登录</button>
+ <!--授权登录-->
+ <button class="sq" type="primary" bindtap="shouquan">授权登录</button>
+<!--注册导航-->
+<view class="register">
+  <view>
+    <navigator open-type="navigate" url="/pages/phone/phone">
+      手机号注册
+    </navigator>
+  </view>
+  <view>
+    <navigator open-type="navigate" url="">
+      找回密码
+    </navigator>
+  </view>
+</view>
+</view>

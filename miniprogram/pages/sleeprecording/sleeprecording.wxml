@@ -1,0 +1,38 @@
+<view class="space1">睡眠记录</view>
+<view>仅记录10天以内</view>
+<picker class = "buttunout" mode="date" bindchange="setsleepdate"> 
+  <view class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20">入睡日期 {{sleepd}}</view>
+</picker>
+<picker class = "buttunout" mode="time" bindchange="setsleeptime">
+  <view class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20">入睡时间 {{sleeph}}</view>
+</picker>
+<view style="height:15px"></view>
+<picker class = "buttunout" mode="date" bindchange="setupdate"> 
+  <view class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20">起床日期 {{upd}}</view>
+</picker>
+<picker class = "buttunout" mode="time" bindchange="setuptime"> 
+  <view class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20">起床时间 {{uph}}</view>
+</picker>
+<view style="height:30px"></view>
+<button class="warn" hover-class="warndown" form-type="reset" bindtap="reset">重置</button>
+<view style="height:15px"></view>
+<view class="buttunsubout">
+  <view class="buttunsub" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20"
+  url="/pages/success/success"
+  bindtap="sub">提交</view>
+</view>

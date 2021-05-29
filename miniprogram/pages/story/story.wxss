@@ -1,0 +1,38 @@
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttun{
+  width: 180rpx;
+  height:38rpx;
+  padding:30rpx 35rpx;
+  background:rgb(140, 231, 3);
+  align-items: center;
+  border: 2rpx solid;
+  border-color: black;
+}
+.block{
+  display: flex;
+  width: 119rpx;
+  flex-direction: column;
+  height:150rpx;
+  padding:30rpx 35rpx;
+}
+.pic{
+  flex:8;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:rgb(219, 216, 216) ;
+  align-items: center;
+}
+.text .title{
+  font-size:23rpx;
+}

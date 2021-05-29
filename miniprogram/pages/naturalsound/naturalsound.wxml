@@ -1,0 +1,55 @@
+<view class="diagram">
+  <image src="{{list[playing].pic}}" wx:if="{{playing!=-1}}"></image>
+</view>
+<view class="row1">
+  <view class = "blo" bindtap="set15">
+    <view class = "tap">
+      <image  wx:if="{{time==15}}" src = "../../image/spot.png" class = "spot"></image>
+      <image  wx:if="{{time!=15}}" src = "../../image/spot-k.png" class = "spot"></image>
+    </view>
+    <view class="text1"> 15分钟</view>
+  </view>
+  <text>　　</text>
+  <view class = "blo" bindtap="set30">
+    <view class = "tap">
+      <image  wx:if="{{time==30}}" src = "../../image/spot.png" class = "spot"></image>
+      <image  wx:if="{{time!=30}}" src = "../../image/spot-k.png" class = "spot"></image>
+    </view>
+    <view class="text1"> 30分钟</view>
+  </view>
+  <text>　　</text>
+  <view class = "blo" bindtap="set60">
+    <view class = "tap">
+      <image  wx:if="{{time==60}}" src = "../../image/spot.png" class = "spot"></image>
+      <image  wx:if="{{time!=60}}" src = "../../image/spot-k.png" class = "spot"></image>
+    </view>
+    <view class="text1"> 60分钟</view>
+  </view>
+  <text>　　</text>
+  <view class = "blo" bindtap="set100">
+    <view class = "tap">
+      <image  wx:if="{{time==100}}" src = "../../image/spot.png" class = "spot"></image>
+      <image  wx:if="{{time!=100}}" src = "../../image/spot-k.png" class = "spot"></image>
+    </view>
+    <view class="text1">∞</view>
+  </view>
+</view>
+<view style="width: 100%; height: 40rpx;background: rgb(0, 195, 255);"></view> 
+<view class="cen"><image style="  width:40rpx;height:25rpx;" class = "cent" src="../../image/big.png" wx:if="{{time==100}}"> </image></view>
+<view wx:if="{{time!=100}}">
+  <view  class = "cen" wx:if="{{already}}">{{hours}}:{{minute}}:{{second}}</view>
+  <view class="cen"><image class = "cent" style="  width:40rpx;height:40rpx;" src="../../image/loading.png" wx:if="{{!already}}"> </image></view>
+</view>
+<scroll-view scroll-y class="sco">
+  <view class="row">
+    <view class="block" wx:for="{{list}}" wx:key="index" bindtap="music" data-id="{{index}}">
+      <view class="pic">
+        <image src="{{item.pic}}" wx:if="{{!item.musicstate}}"></image>
+        <image src="{{item.picp}}" wx:if="{{item.musicstate}}"></image>
+      </view>
+      <view class="text">
+        <view class="title">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

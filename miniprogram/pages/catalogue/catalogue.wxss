@@ -1,0 +1,58 @@
+.show{
+  width: 100%;
+  height: 500rpx;
+  background-image: url(https://iknow-pic.cdn.bcebos.com/08f790529822720e058cf0a974cb0a46f21fab26?x-bce-process%3Dimage%2Fresize%2Cm_lfit%2Cw_600%2Ch_800%2Climit_1%2Fquality%2Cq_85%2Fformat%2Cf_jpg);
+}
+@font-face {
+  font-family: "blod";
+  src: url('https://static.heytea.com/taro_trial/v1/font/WenYue-XinQingNianTi-NC-W8_1.otf');
+}
+.title{
+  font-family: 'blod';
+  font-size: 200rpx;
+  color:rgb(255, 255, 255);
+  padding-top: 80rpx;
+}
+.con{
+  display: flex;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttun{
+  width: 180rpx;
+  height:38rpx;
+  padding:30rpx 35rpx;
+  background:rgb(140, 231, 3);
+  align-items: center;
+  border: 2rpx solid;
+  border-color: black;
+}
+.block{
+  display: flex;
+  width: 120rpx;
+  flex-direction: column;
+  height:150rpx;
+  padding:30rpx 35rpx;
+}
+.pic{
+  flex:8;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:rgb(219, 216, 216) ;
+  align-items: center;
+}
+.text .title1{
+  font-size:23rpx;
+  color:black;
+}

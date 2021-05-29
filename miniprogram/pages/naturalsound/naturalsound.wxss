@@ -1,0 +1,89 @@
+.sco{
+  height: 750rpx;
+}
+.diagram{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 320rpx;
+  background: rgb(0, 195, 255);
+}
+.diagram image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.row1{
+  display: flex;
+  background: rgb(0, 195, 255);
+  width: 100%;
+  height:100rpx;
+  justify-content: center;
+} 
+.spot{
+  width: 30rpx;
+  height: 30rpx;
+}
+.tap{
+  height: 70rpx;
+  width: 70rpx;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+}
+.blo{
+  display: flex;
+  flex-direction: column;
+}
+.text1{
+  flex:3;
+  display: flex;
+  line-height: 40rpx;
+  font-size: xx-small;
+  color:white;  
+  justify-content: center;
+}
+
+.cen{
+  display: flex;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 195, 255);
+}
+.cent{
+  padding-bottom: 15rpx;
+  background: rgb(0, 195, 255);
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.block{
+  display: flex;
+  width: 119rpx;
+  flex-direction: column;
+  height:150rpx;
+  padding:30rpx 35rpx;
+}
+.pic{
+  flex:8;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:rgb(219, 216, 216) ;
+  align-items: center;
+}
+.text .title{
+  font-size:23rpx;
+}
