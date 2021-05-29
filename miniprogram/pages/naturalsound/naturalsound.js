@@ -5,6 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
+    "barlist": [
+      {
+        "pagePath": "/pages/naturalsound/naturalsound",
+        "text": "自然音效",
+        "iconPath": "/image/apple.png",
+        "selectedColor": "#2679f4"
+      },
+      {
+        "pagePath": "/pages/catalogue/catalogue",
+        "text": "睡前故事",
+        "barflag":true,
+        "iconPath": "/image/apple.png"
+      },
+      {
+        "pagePath": "/pages/sleeprecord/sleeprecord",
+        "text": "睡眠记录",
+        "barflag":true,
+        "iconPath": "/image/apple.png"
+      }
+    ],
     list:[{
       name:"时钟",
       url:"https://link.jscdn.cn/sharepoint/aHR0cHM6Ly8xZHJpdi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9zdG9yXzFkcml2X29ubWljcm9zb2Z0X2NvbS9FYzdqVDEzRkVtMUNrNEU2SlFUcXlrMEJzZUNXWnJJZHRUM0xBUVJIa0NCeXBR.mp3",
@@ -267,6 +287,7 @@ Page({
       bgMusic.pause()
     }
   },
+
 
   /**
    * 生命周期函数--监听页面加载

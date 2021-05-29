@@ -1,30 +1,11 @@
-// pages/sleeprecord/sleeprecord.js
+// miniprogram/pages/foodcount/foodcount.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "barlist": [
-      {
-        "pagePath": "/pages/naturalsound/naturalsound",
-        "text": "自然音效",
-        "iconPath": "/image/apple.png",
-        "barflag":true
-      },
-      {
-        "pagePath": "/pages/catalogue/catalogue",
-        "text": "睡前故事",
-        "barflag":true,
-        "iconPath": "/image/apple.png"
-      },
-      {
-        "pagePath": "/pages/sleeprecord/sleeprecord",
-        "text": "睡眠记录",
-        "iconPath": "/image/apple.png",
-        "selectedColor": "#2679f4"
-      }
-    ],
+
   },
 
   /**

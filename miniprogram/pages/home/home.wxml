@@ -2,11 +2,11 @@
 <view>
 
 <!-- 登录注册 -->
-<view class="logreg">
+<!--<view class="logreg">
     <navigator url="../login/login" open-type="navigate" class="uploader-text">
       <text>登录/注册</text>
     </navigator>
-  </view>
+  </view>-->
 
   <!-- 用户 openid -->
   <view class="userinfo">

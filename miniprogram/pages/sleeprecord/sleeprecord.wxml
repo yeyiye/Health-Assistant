@@ -13,3 +13,4 @@
   hover-stay-time = "20"
   url="/pages/sleeprecorded/sleeprecorded">往期记录</navigator>
 </view>
+<mytabbar barlist="{{barlist}}"></mytabbar>

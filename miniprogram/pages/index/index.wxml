@@ -1,12 +1,25 @@
 <!--index.wxml-->
 <view class="container">
-
-  <navigator url="../demo1/demo1" open-type="navigate">
-    <button type="button">健康自测</button>
-  </navigator>
-
-  <navigator url="../sleep/sleep" open-type="navigate">
-    <button type="button">睡眠</button>
-  </navigator>
-
+<view class="block"></view>
+  <view class="buttunout">
+  <navigator class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20" 
+  url="/pages/demo1/demo1">健康自测</navigator>
+</view>  
+<view class="buttunout">
+  <navigator class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20" 
+  url="/pages/sleep/sleep">睡眠</navigator>
+</view>
+  <view class="buttunout">
+  <navigator class="buttunin" 
+  hover-class="buttundown"
+  hover-start-time = "0"
+  hover-stay-time = "20" 
+  url="/pages/foodcount/foodcount">饮食计算</navigator>
+</view>
 </view>

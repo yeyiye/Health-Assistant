@@ -10,7 +10,8 @@
     "pages/success/success",
     "pages/naturalsound/naturalsound",
     "pages/story/story",
-    "pages/catalogue/catalogue"
+    "pages/catalogue/catalogue",
+    "pages/foodcount/foodcount"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -34,8 +35,8 @@
       {
         "pagePath": "pages/home/home",
         "text": "我 的",
-        "iconPath": "/image/apptaritem_home.png",
-        "selectedIconPath": "/image/apptaritem_home_p.png"
+        "iconPath": "/image/apptaritem_user.png",
+        "selectedIconPath": "/image/apptaritem_user_p.png"
       }
     ]
   }

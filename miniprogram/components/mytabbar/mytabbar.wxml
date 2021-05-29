@@ -1,0 +1,9 @@
+<!--components/mytabbar/mytabbar.wxml-->
+<view class="tabBar">
+ <block wx:for="{{barlist}}" wx:key="id">
+   <view style="width:{{100/barlist.length}}%" bindtap="forwardBar" data-url="{{item.pagePath}}" data-barflag="{{item.barflag}}">
+     <image src="{{item.iconPath}}"></image>
+     <text style="color:{{item.selectedColor}}">{{item.text}}</text>
+   </view>
+ </block>
+</view>

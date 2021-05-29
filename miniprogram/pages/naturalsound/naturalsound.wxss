@@ -82,6 +82,7 @@
   flex-direction: column;
   justify-content: space-between;
   background:rgb(219, 216, 216) ;
+  border-radius: 30cm;
   align-items: center;
 }
 .text .title{

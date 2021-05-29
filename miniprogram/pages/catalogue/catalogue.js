@@ -5,6 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
+    "barlist": [
+      {
+        "pagePath": "/pages/naturalsound/naturalsound",
+        "text": "自然音效",
+        "barflag":true,
+        "iconPath": "/image/apple.png"
+      },
+      {
+        "pagePath": "/pages/catalogue/catalogue",
+        "text": "睡前故事",
+        "iconPath": "/image/apple.png",
+        "selectedColor": "#2679f4"
+      },
+      {
+        "pagePath": "/pages/sleeprecord/sleeprecord",
+        "text": "睡眠记录",
+        "barflag":true,
+        "iconPath": "/image/apple.png"
+        
+      }
+    ],
     list:[{
       name:"动物故事哈哈镜",
       url:"../story/story"
