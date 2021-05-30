@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/home/home",
-    "pages/demo1/demo1",
     "pages/sleep/sleep",
     "pages/sleeprecord/sleeprecord",
     "pages/sleeprecording/sleeprecording",
@@ -11,7 +10,10 @@
     "pages/naturalsound/naturalsound",
     "pages/story/story",
     "pages/catalogue/catalogue",
-    "pages/foodcount/foodcount"
+    "pages/foodcount/essay",
+    "pages/questionnaire/question1",
+    "pages/questionnaire/result/result",
+    "pages/searchdemo/searchdemo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -31,6 +33,12 @@
         "text": "首 页",
         "iconPath": "/image/apptaritem_home.png",
         "selectedIconPath": "/image/apptaritem_home_p.png"
+      },
+      {
+        "pagePath": "pages/searchdemo/searchdemo",
+        "text": "搜 索",
+        "iconPath": "/image/apptaritem_search.png",
+        "selectedIconPath": "/image/apptaritem_search_p.png"
       },
       {
         "pagePath": "pages/home/home",

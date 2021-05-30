@@ -1,18 +1,39 @@
-// miniprogram/pages/foodcount/foodcount.js
+// miniprogram/pages/questionnaire/result/result.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    result:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options.result)
+    if(parseInt(options.result)>38){
+      this.setData({
+        result:1
+      })
+    }
+    else if (parseInt(options.result)<=38&&parseInt(options.result)>28){
+      this.setData({
+        result:2
+      })
+    }
+    else if (parseInt(options.result)<=28&&parseInt(options.result)>18){
+      this.setData({
+        result:3
+      })
+    }
+    else if (parseInt(options.result)<28){
+      this.setData({
+        result:4
+      })
+    }
+    console.log(this.data.result)
   },
 
   /**
@@ -62,5 +83,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
 })

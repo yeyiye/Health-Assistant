@@ -1,0 +1,224 @@
+<!--miniprogram/pages/questionnaire/question1.wxml-->
+<text>——————健康情况小问卷——————</text>
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0">1</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1">2</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2">3</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3">4</view>
+  <view class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="4">5</view>
+  <view class="swiper-tab-item {{currentTab==5?'active':''}}" data-current="5">6</view>
+  <view class="swiper-tab-item {{currentTab==6?'active':''}}" data-current="6">7</view>
+  <view class="swiper-tab-item {{currentTab==7?'active':''}}" data-current="7">8</view>
+  <view class="swiper-tab-item {{currentTab==8?'active':''}}" data-current="8">9</view>
+  <view class="swiper-tab-item {{currentTab==9?'active':''}}" data-current="9">10</view>
+  <view class="swiper-tab-item {{currentTab==10?'active':''}}" data-current="10">11</view>
+  <view class="swiper-tab-item {{currentTab==11?'active':''}}" data-current="11">12</view>
+  <!-- bindtap="clickTab"-->
+</view>
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" class="page">
+  <swiper-item>
+  <view class="questionbox">
+    <view class="question"><text>1  今日锻炼时长？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items1}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout" hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="0" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>2  睡觉时间？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items2}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="1" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>3  睡觉时长（当日总和）？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items3}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="2" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>4  早点情况如何？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items4}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="3" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>5  午餐情况如何？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items5}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="4" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>6  晚餐情况如何？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items6}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="5" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>7  宵夜？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items7}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="6" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>8  吃了多少零食？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items8}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="7" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>9  吸烟量？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items9}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="8" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>10 喝了多少？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items10}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="9" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>11 久坐时长？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items11}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <view class="buttunin" 
+      data-current="10" bindtap="clickTabUp"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" >下一页</view>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="questionbox">
+    <view class="question"><text>12 使用电子产品时长？</text></view>
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items12}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    <view class="buttunout"  hidden="{{currentTab!=lastTab}}">
+      <navigator class="buttunin" 
+      data-current="11" bindtap="getResult"
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" 
+      url="/pages/questionnaire/result/result?result={{sum}}">获取结果</navigator>
+    </view>
+    </radio-group>
+  </view>
+  </swiper-item>
+</swiper>

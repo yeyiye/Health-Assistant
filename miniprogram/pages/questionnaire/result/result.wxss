@@ -1,0 +1,5 @@
+/* miniprogram/pages/questionnaire/result/result.wxss */
+.block {
+  margin: 30px;
+  margin-top: 70px;
+}

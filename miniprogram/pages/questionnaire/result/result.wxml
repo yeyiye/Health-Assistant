@@ -1,0 +1,15 @@
+<!--miniprogram/pages/questionnaire/result/result.wxml-->
+<view class="block">
+<view class="show" hidden="{{result!=1}}">恭喜你！你的健康状况是今日当之无愧的健康达人~某些不尽完美的地方稍加注意，以后还要继续保持哟~</view>
+<view class="show" hidden="{{result!=2}}">总体来说还算不错，可能是因为有什么开心事所以今天稍稍放纵了一下吧~虽然健康情况依然良好，但是还是要稍稍的克制一下自己哟~</view>
+<view class="show" hidden="{{result!=3}}">如果分数在这个区间，那么就要注意一下自己的生活习惯啦~饮食健康均衡一些，多出去走一走，保持合理充足的睡眠，多坚持几天，可能会有更好的精神面貌呢~</view>
+<view class="show" hidden="{{result!=4}}">emmm，要好好的爱惜自己的身体哟，只有先爱自己，才能更好的去爱别人，我相信这种情况只是偶尔一次，身体才是革命的本钱，要加油哦~</view>
+<view class="buttunout">
+      <navigator class="buttunin" 
+      hover-class="buttundown"
+      hover-start-time = "0"
+      hover-stay-time = "20" 
+      open-type="switchTab"
+      url="/pages/index/index">返回首页</navigator>
+    </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="top">
+  <view class="topsearch">
+    <view class="frame">
+      <input value="{{searchtext}}" bindinput="searchinput"></input>
+    </view>
+    <text bindtap="search">搜索</text>
+  </view>
+</view>
+<view class="history" wx:if="{{history}}">
+  <view class="history_title">
+    <text>历史搜索</text>
+  </view>
+  <view class="history_text">
+    <text wx:for="{{newArray}}" wx:key="key" data-text="{{item}}" bindtap="textfz">{{item}}</text>
+  </view>
+</view>
+<view class="none" wx:if="{{noneview}}">
+  <text>抱歉，没有相关信息</text>
+</view>
+<view class='swiper_con' wx:if="{{searchlist}}">
+  <view class='swiper_con_view' wx:for="{{searcharray}}" wx:key="id" wx:if='{{item.status=="1"?true:false}}'>
+    <view style="width:90%;margin:5%;">
+      <text style="font-size:24rpx">{{item.title}}</text>
+      <view class="swiper_con_view_view">
+      </view>
+    </view>
+  </view>
+</view>

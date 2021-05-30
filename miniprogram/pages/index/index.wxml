@@ -6,7 +6,7 @@
   hover-class="buttundown"
   hover-start-time = "0"
   hover-stay-time = "20" 
-  url="/pages/demo1/demo1">健康自测</navigator>
+  url="/pages/questionnaire/question1">健康自测</navigator>
 </view>  
 <view class="buttunout">
   <navigator class="buttunin" 
@@ -20,6 +20,6 @@
   hover-class="buttundown"
   hover-start-time = "0"
   hover-stay-time = "20" 
-  url="/pages/foodcount/foodcount">饮食计算</navigator>
+  url="/pages/foodcount/essay">饮食计算</navigator>
 </view>
 </view>

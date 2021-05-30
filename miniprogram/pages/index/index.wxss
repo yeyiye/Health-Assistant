@@ -34,7 +34,7 @@ page {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50rpx;
+  margin: 30rpx;
   padding: 20rpx;
   height: 70rpx;
   width: 60%;

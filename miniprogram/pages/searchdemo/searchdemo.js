@@ -1,4 +1,4 @@
-// pages/demo1/demo1.js
+// miniprogram/pages/searchdemo/searchdemo.js
 Page({
 
   /**
@@ -6,6 +6,11 @@ Page({
    */
   data: {
 
+  },
+  suo: function (e) {
+    wx.navigateTo({
+      url: '/pages/searchdemo/search/search',
+    })
   },
 
   /**

@@ -1,0 +1,81 @@
+/* miniprogram/pages/questionnaire/question1.wxss */
+
+page{
+  height: 100%;
+}
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: bold;
+}
+.swiper-tab-item{
+  display: inline-block;
+  width: 8.3%;
+  color:red;
+}
+.page{
+  height: 300px;
+}
+.active{
+  color:aqua;
+  border-bottom: 4rpx solid red;
+}
+
+.buttunout{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+
+.buttunin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50rpx;
+  padding: 20rpx;
+  height: 70rpx;
+  width: 60%;
+  border-radius: 50cm;
+  background-color: aqua;
+}
+.buttundown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50rpx;
+  padding: 20rpx;
+  height: 70rpx;
+  width: 60%;
+  border: 2rpx solid;
+  border-color: rgb(93, 119, 235);
+  background-color: rgb(0, 174, 255);
+}
+
+.questionbox {
+  height: 100px;
+  text-align:center;
+}
+
+.question {
+  margin: 20px;
+  display: inline-block;
+  text-align: start;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio {
+  margin-top: 10px;
+}
+
+.hidden{
+  display: none;
+}
